@@ -3083,6 +3083,7 @@ input, select, textarea {
 		.wrapper.style3 {
 			background-color: rgba(80, 83, 147, 0.7);
 			color: #d3d4e4;
+			padding: 2em 4em 1em 4em ;
 		}
 
 			.wrapper.style3 strong, .wrapper.style3 b {
