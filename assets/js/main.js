@@ -80,4 +80,4 @@
 
 		}
 
-})(jQuery)
+})(jQuery);
