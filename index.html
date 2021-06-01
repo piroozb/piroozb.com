@@ -151,10 +151,20 @@
 	<!-- Three -->
 	<section id="resume" class="wrapper style3 special">
 		<div class="inner">
-			<h2>Resumé</h2>
-			<div class="container">
-			<iframe class="responsive-iframe" src="Pirooz_Resume.pdf" type="application/pdf" width="1000px" height="750px">
-			</iframe></div>
+			<h2>Résumé</h2>
+			<div class="resume-container">
+			<iframe class="responsive-iframe" src="Pirooz_Resume.pdf" type="application/pdf">
+			</iframe>
+		</div>
+		<script>
+		const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent)
+			const resume = document.querySelector(".resume-container")
+
+			if(isSafari) {
+				resume.innerHTML = "<img src='./resume_image.jpg'/>"
+			}
+
+		</script>
 			<a href="/Pirooz_Resume.zip" download><p class="zoom2"><i class="icon solid fa-file-archive" aria-hidden="true"></i><b> LaTeX Download</b></p></a>
 		</div>
 	</section>
