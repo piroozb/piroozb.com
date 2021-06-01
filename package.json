@@ -1,0 +1,23 @@
+{
+  "name": "piroozbarkoosaraei.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piroozb/piroozbarkoosaraei.com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/piroozb/piroozbarkoosaraei.com/issues"
+  },
+  "homepage": "https://github.com/piroozb/piroozbarkoosaraei.com#readme",
+  "dependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}
