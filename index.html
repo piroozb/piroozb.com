@@ -161,7 +161,34 @@
 			const resume = document.querySelector(".resume-container")
 
 			if(isSafari) {
-				resume.innerHTML = "<img src='./resume_image.jpg'/>"
+				resume.style.padding = 0
+				resume.style.backgroundImage = "url('./resume_image.jpg')"
+				resume.style.height = "calc(1.29411765 * 100vw)"
+				resume.style.width = "100vw"
+				resume.style.margin = "0"
+				resume.style.padding = "0"
+				resume.style.backgroundSize = "contain"
+				resume.style.backgroundRepeat = "no-repeat"
+				resume.style.backgroundPosition = "center"
+
+				resume.innerHTML = ""
+
+				const resumeContainer = document.querySelector("#resume")
+	resumeContainer.style.padding = 0
+	resumeContainer.style.display = "flex"
+	resumeContainer.style.justifyContent = "center"
+	resumeContainer.style.alignItems = "center"
+
+	const inner = resumeContainer.querySelector(".inner")
+	inner.style.display = "flex"
+	inner.style.justifyContent = "center"
+	inner.style.alignItems = "center"
+
+	inner.style.flexDirection = "column"
+
+	resume.onclick = () => {
+		window.location.href = "./Pirooz_Resume.pdf"
+	}
 			}
 
 		</script>
