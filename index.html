@@ -163,6 +163,18 @@
 			</section>
 		</section>
 
+		<style> 
+		@media (max-width: 800px) {
+		.spotlight .content:nth-child(2) {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+			}
+		}
+
+		</style>
+
 		<!-- Three -->
 		<section id="resume" class="wrapper style3 special">
 			<div class="inner">
@@ -173,6 +185,7 @@
 				</div>
 				<script>
 					const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent)
+					// const isSafari = window.innerWidth < 800
 					const resume = document.querySelector(".resume-container")
 
 					if (isSafari) {
@@ -184,7 +197,6 @@
 						resume.style.padding = "0"
 						resume.style.backgroundSize = "contain"
 						resume.style.backgroundRepeat = "no-repeat"
-						resume.style.backgroundPosition = "center"
 
 						resume.innerHTML = ""
 
@@ -200,10 +212,6 @@
 						inner.style.alignItems = "center"
 
 						inner.style.flexDirection = "column"
-
-						resume.onclick = () => {
-							window.location.href = "./Pirooz_Resume.pdf"
-						}
 					}
 
 				</script>
