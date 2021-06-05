@@ -9,3 +9,5 @@ node_modules
 /httpRequests/
 /node_modules/
 .idea
+package.json
+package-lock.json
