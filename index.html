@@ -15,6 +15,21 @@
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
+	<style>
+		/* Hide element on Desktop */
+		@media only screen and (min-width: 981px) {
+			.hide-on-desktop {
+				display: none !important;
+			}
+		}
+
+		/* Hide element on Tablet/Phone */
+		@media only screen and (max-width: 980px) {
+			.hide-on-mobile-tablet {
+				display: none !important;
+			}
+		}
+	</style>
 </head>
 
 <body class="landing is-preload">
@@ -163,63 +178,34 @@
 			</section>
 		</section>
 
-		<style> 
-		@media (max-width: 800px) {
-		.spotlight .content:nth-child(2) {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+		<style>
+			@media (max-width: 800px) {
+				.spotlight .content:nth-child(2) {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+				}
 			}
-		}
-
 		</style>
 
 		<!-- Three -->
 		<section id="resume" class="wrapper style3 special">
 			<div class="inner">
 				<h2>Résumé</h2>
-				<div class="resume-container">
+				<div id="content-desktop" class="resume-container hide-on-mobile-tablet">
 					<iframe class="responsive-iframe" src="Pirooz_Resume.pdf" type="application/pdf">
 					</iframe>
 				</div>
-				<script>
-					const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent)
-					// const isSafari = window.innerWidth < 800
-					const resume = document.querySelector(".resume-container")
-
-					if (isSafari) {
-						resume.style.padding = 0
-						resume.style.backgroundImage = "url('./resume_image.jpg')"
-						resume.style.height = "calc(1.29411765 * 100vw)"
-						resume.style.width = "100vw"
-						resume.style.margin = "0"
-						resume.style.padding = "0"
-						resume.style.backgroundSize = "contain"
-						resume.style.backgroundRepeat = "no-repeat"
-
-						resume.innerHTML = ""
-
-						const resumeContainer = document.querySelector("#resume")
-						resumeContainer.style.padding = 0
-						resumeContainer.style.display = "flex"
-						resumeContainer.style.justifyContent = "center"
-						resumeContainer.style.alignItems = "center"
-
-						const inner = resumeContainer.querySelector(".inner")
-						inner.style.display = "flex"
-						inner.style.justifyContent = "center"
-						inner.style.alignItems = "center"
-
-						inner.style.flexDirection = "column"
-					}
-
-				</script>
-				<a href="/Pirooz_Resume.zip" download>
-					<p class="zoom2"><i class="icon solid fa-file-archive" aria-hidden="true"></i><b> LaTeX Download</b>
-					</p>
+				<div id="comtent-mobile" class="hide-on-desktop">
+					On mobile? You can view the PDF by clicking <a href="/Pirooz_Resume.pdf">here</a>
+					<a href="/Pirooz_Resume.zip">
+				</div>
+				<p class="zoom2"><i class="icon solid fa-file-archive" aria-hidden="true"></i><b> LaTeX
+						Download</b>
+				</p>
 				</a>
-			</div>
+
 		</section>
 
 		<footer id="footer">
