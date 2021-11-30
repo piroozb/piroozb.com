@@ -2141,7 +2141,7 @@ input, select, textarea {
 /* Image */
 
 	.image {
-		border-radius: 3px;
+		border-radius: 10px;
 		border: 0;
 		display: inline-block;
 		position: relative;
@@ -2718,7 +2718,7 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-
+		padding: 2%;
 	}
 
 		.spotlight a { border: none;}
@@ -2733,7 +2733,7 @@ input, select, textarea {
 		}
 
 			.spotlight .image img {
-				border-radius: 0;
+				border-radius: 30px;
 				width: 100%;
 			}
 
@@ -2837,8 +2837,10 @@ input, select, textarea {
 }
 
 .aboutme .image img {
-	border-radius: 0;
+	border-radius: 30px;
 	width: 100%;
+	margin-left: 5%;
+	margin-right: 5%;
 }
 
 .aboutme .content {
@@ -2862,10 +2864,12 @@ input, select, textarea {
 
 	.aboutme .image {
 		width: 45%;
+		margin-left: 0%;
 	}
 
 	.aboutme .content {
 		width: 55%;
+		margin-left: 0%;
 	}
 
 }
@@ -2881,7 +2885,10 @@ input, select, textarea {
 	}
 
 	.aboutme .image {
-		width: 100%;
+		width: 80%;
+		margin: auto;
+		margin-top: 5%;
+		margin-left: 6%;
 	}
 
 	.aboutme .content {
