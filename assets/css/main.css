@@ -121,6 +121,10 @@ input, select, textarea {
 	}
 }
 
+:root {
+	color-scheme: dark;
+  }
+
 /* Basic */
 
 	@-ms-viewport {
@@ -2823,8 +2827,8 @@ input, select, textarea {
 	display: -moz-flex;
 	display: -webkit-flex;
 	display: -ms-flex;
-	display: flex;
 	text-align: left;
+	justify-content: center;
 }
 
 .aboutme .image {
@@ -2834,6 +2838,7 @@ input, select, textarea {
 	order: 1;
 	border-radius: 0;
 	width: 40%;
+	padding: 2em 0em 2em 0em;
 }
 
 .aboutme .image img {
@@ -2844,7 +2849,7 @@ input, select, textarea {
 }
 
 .aboutme .content {
-	padding: 2em 4em 0.1em 4em ;
+	padding: 2em 0em 0.1em 4em;
 	-moz-order: 2;
 	-webkit-order: 2;
 	-ms-order: 2;
@@ -3274,46 +3279,46 @@ input, select, textarea {
 		.wrapper.style4 {
 			background-color: transparent;
 		}
-
 		.wrapper.style5 {
-			background-color: #ffffff;
-			color: #4E4852;
+			background-color: rgba(40, 117, 148, 0.7);
+			color: #d3d4e4;
+			padding: 2em 4em 1em 4em ;
 		}
 
 			.wrapper.style5 strong, .wrapper.style5 b {
-				color: #2E3842;
+				color: #ffffff;
 			}
 
 			.wrapper.style5 h2, .wrapper.style5 h3, .wrapper.style5 h4, .wrapper.style5 h5, .wrapper.style5 h6 {
-				color: #2E3842;
+				color: #ffffff;
 			}
 
 			.wrapper.style5 hr {
-				border-color: #dfdfdf;
+				border-color: rgba(0, 0, 0, 0.125);
 			}
 
 			.wrapper.style5 blockquote {
-				border-color: #dfdfdf;
+				border-color: rgba(0, 0, 0, 0.125);
 			}
 
 			.wrapper.style5 code {
-				background: rgba(0, 0, 0, 0.0375);
+				background: rgba(255, 255, 255, 0.075);
 			}
 
 			.wrapper.style5 header p {
-				color: #8E8892;
+				color: #b9bad4;
 			}
 
 			.wrapper.style5 header.major h2, .wrapper.style5 header.major h3, .wrapper.style5 header.major h4, .wrapper.style5 header.major h5, .wrapper.style5 header.major h6 {
-				border-color: #dfdfdf;
+				border-color: rgba(0, 0, 0, 0.125);
 			}
 
 			.wrapper.style5 header.major p {
-				color: #4E4852;
+				color: #d3d4e4;
 			}
 
 			.wrapper.style5 label {
-				color: #2E3842;
+				color: #ffffff;
 			}
 
 			.wrapper.style5 input[type="text"],
@@ -3321,84 +3326,84 @@ input, select, textarea {
 			.wrapper.style5 input[type="email"],
 			.wrapper.style5 select,
 			.wrapper.style5 textarea {
-				background-color: rgba(0, 0, 0, 0.0375);
+				background-color: rgba(255, 255, 255, 0.075);
 			}
 
 			.wrapper.style5 select {
-				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='%23dfdfdf' /%3E%3C/svg%3E");
+				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='rgba(0, 0, 0, 0.125)' /%3E%3C/svg%3E");
 			}
 
 				.wrapper.style5 select option {
-					color: #2E3842;
-					background: #ffffff;
+					color: #ffffff;
+					background: #505393;
 				}
 
 			.wrapper.style5 input[type="checkbox"] + label,
 			.wrapper.style5 input[type="radio"] + label {
-				color: #4E4852;
+				color: #d3d4e4;
 			}
 
 				.wrapper.style5 input[type="checkbox"] + label:before,
 				.wrapper.style5 input[type="radio"] + label:before {
-					background: rgba(0, 0, 0, 0.0375);
+					background: rgba(255, 255, 255, 0.075);
 				}
 
 			.wrapper.style5 input[type="checkbox"]:checked + label:before,
 			.wrapper.style5 input[type="radio"]:checked + label:before {
-				background: #2E3842;
-				color: #ffffff;
+				background: #ffffff;
+				color: #505393;
 			}
 
 			.wrapper.style5 ::-webkit-input-placeholder {
-				color: #8E8892 !important;
+				color: #b9bad4 !important;
 			}
 
 			.wrapper.style5 :-moz-placeholder {
-				color: #8E8892 !important;
+				color: #b9bad4 !important;
 			}
 
 			.wrapper.style5 ::-moz-placeholder {
-				color: #8E8892 !important;
+				color: #b9bad4 !important;
 			}
 
 			.wrapper.style5 :-ms-input-placeholder {
-				color: #8E8892 !important;
+				color: #b9bad4 !important;
 			}
 
 			.wrapper.style5 .formerize-placeholder {
-				color: #8E8892 !important;
+				color: #b9bad4 !important;
 			}
 
 			.wrapper.style5 .icon.major {
-				border-color: #dfdfdf;
+				border-color: rgba(0, 0, 0, 0.125);
 			}
 
 			.wrapper.style5 ul.alt li {
-				border-color: #dfdfdf;
+				border-color: rgba(0, 0, 0, 0.125);
 			}
 
 			.wrapper.style5 table tbody tr {
-				border-color: #dfdfdf;
+				border-color: rgba(0, 0, 0, 0.125);
 			}
 
 				.wrapper.style5 table tbody tr:nth-child(2n + 1) {
-					background-color: rgba(0, 0, 0, 0.0375);
+					background-color: rgba(255, 255, 255, 0.075);
 				}
 
 			.wrapper.style5 table th {
-				color: #2E3842;
+				color: #ffffff;
 			}
 
 			.wrapper.style5 table thead {
-				border-color: #dfdfdf;
+				border-color: rgba(0, 0, 0, 0.125);
 			}
 
 			.wrapper.style5 table tfoot {
-				border-color: #dfdfdf;
+				border-color: rgba(0, 0, 0, 0.125);
 			}
 
 			.wrapper.style5 table.alt tbody tr td {
-				border-color: #dfdfdf;
+				border-color: rgba(0, 0, 0, 0.125);
 			}
 
 			.wrapper.style5 input[type="submit"],
@@ -3406,8 +3411,8 @@ input, select, textarea {
 			.wrapper.style5 input[type="button"],
 			.wrapper.style5 button,
 			.wrapper.style5 .button {
-				box-shadow: inset 0 0 0 2px #dfdfdf;
-				color: #2E3842;
+				box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.125);
+				color: #ffffff;
 			}
 
 				.wrapper.style5 input[type="submit"]:hover,
@@ -3415,7 +3420,7 @@ input, select, textarea {
 				.wrapper.style5 input[type="button"]:hover,
 				.wrapper.style5 button:hover,
 				.wrapper.style5 .button:hover {
-					background-color: rgba(0, 0, 0, 0.0375);
+					background-color: rgba(255, 255, 255, 0.075);
 				}
 
 				.wrapper.style5 input[type="submit"]:active,
@@ -3423,13 +3428,13 @@ input, select, textarea {
 				.wrapper.style5 input[type="button"]:active,
 				.wrapper.style5 button:active,
 				.wrapper.style5 .button:active {
-					background-color: rgba(0, 0, 0, 0.1);
+					background-color: rgba(255, 255, 255, 0.2);
 				}
 
 			@media screen and (max-width: 736px) {
 
 				.wrapper.style5 .features li {
-					border-top-color: #dfdfdf;
+					border-top-color: rgba(0, 0, 0, 0.125);
 				}
 
 			}
