@@ -20,6 +20,11 @@
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
+	<script>
+		function myFunction() {
+			document.getElementById("year").innerHTML = new Date().getFullYear();
+		}
+		</script>
 	<style>
 		/* Hide element on Desktop */
 		@media only screen and (min-width: 981px) {
@@ -37,7 +42,7 @@
 	</style>
 </head>
 
-<body class="landing is-preload">
+<body class="landing is-preload" onload="myFunction()">
 
 	<!-- Page Wrapper -->
 	<div id="page-wrapper">
@@ -85,33 +90,114 @@
 				<div class="image"><img src="images/pirooz.jpg" alt="Pirooz" /></div>
 				<div class="content">
 					<h2>About me</h2>
-					<p>Hi, my name is Pirooz, an undergraduate student studying computer science and
-						cognitive science at the University of Toronto.<br /><br />
+					<p>Hi, my name is Pirooz, and I am an undergraduate student studying computer science and cognitive
+						science at the University of Toronto.<br /><br />
 
-						As this is just the start of my career, I am very eager to learn as much as
-						possible in computer science. Over the last year, I have gained many skills
-						in Python, Java and C# ranging from sorting algorithms, software design, and
-						time complexity, and I am quite eager to learn more. Therefore, I am currently
-						learning Javascript and am working hard to improve my programming skills. I am
-						also very devoted to my education and really enjoyed the courses I have completed,
-						currently holding a 4.0 CGPA.<br /><br />
+						As this is just the start of my career, I am very eager to learn as much as possible in computer
+						science. Over the last two years, I have gained many Python, Java, and C skills ranging from
+						sorting algorithms, software design, design patterns, and object-oriented programming, and I am
+						eager to learn more.
+						Although I will be taking a break from school for the following two terms, I am still looking
+						around for skills to gain in online courses and videos. I am also quite devoted to my education
+						in Computer Science and Cognitive Science, and I have enjoyed completing the
+						courses.<br /><br />
 
-						Furthermore, I am constantly seeking opportunities to display my skills while
-						also improving on these skills. I have worked on a few projects in the past
-						few months, including a Discord bot that lets people set reminders for
-						important dates and play Connect 4 with other users or with an AI. Currently,
-						I am focusing on my studies and work at the Kidney Health Education and Research
-						Group. I am also open to employment for the upcoming summer term, so feel free to
-						contact me via <a href="mailto:piroozsab@gmail.com">email</a>, and I will
-						answer as soon as possible!<br /><br />
+						Furthermore, I am constantly seeking opportunities to improve and display my programming and
+						software development skills. I have worked on a few projects at three different companies in the
+						past few months, including a website made using React that supports teachers in their mental
+						well-being and teaching their students and a cross-platform app made in React Native used to
+						control a device. In the upcoming summer, I will be working for Equifax Canada as a Junior
+						Quality Engineer. I am also open to employment for the upcoming fall term, so feel free to
+						contact me via <a href="mailto:piroozsab@gmail.com">email</a>, and I will try to respond as soon
+						as possible!<br /><br />
 
-						Outside of programming, I spend most of my free time practicing boxing, going to the gym,
-						gaming with friends, and playing with my adorable kittens (Check out my <a
+						Outside of programming, I spend most of my free time weightlifting, meditating,
+						going out with friends, and playing with my adorable kittens (Check out my <a
 							href="https://www.instagram.com/pillscapsules/">Instagram</a>!).
 					</p>
 				</div>
 			</section>
 		</section>
+
+		<!-- Two -->
+		<section id="job">
+			<div class="job">
+				<h2>Experience</h2>
+			</div>
+		</section>
+
+		<section class="wrapper alt style2">
+			<section class="spotlight">
+				<div class="image"><img src="images/teacher-app.png" alt="Canada COVID-19 Timeline" /></div>
+				<div class="content">
+					<h3>The Teacher App <a href="https://www.linkedin.com/company/tapp-teacher-app/">
+							<span class="icon brands fa-linkedin zoom" style="display: inline-block"></span></a>
+						<a href="http://theteacherapp.ca/">
+							<span class="icon solid fa-globe zoom" style="display: inline-block"></span></a>
+					</h3>
+					<div class="col-6 col-12-medium">
+						<ul>
+							<li><b>Researched</b> what tools and libraries to use for the website including the
+								front-end, back-end, and database</li>
+							<li>Utilized the <b>React</b> library, <b>SASS</b>, and <b>Firebase</b> to set up the
+								styling and functionality of the website</li>
+							<li>Integrated the UI/UX designer’s website design when creating the designing and styling
+								of
+								the website</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section class="spotlight">
+				<div class="image"><img src="images/xponent.png" alt="Canada COVID-19 Timeline" /></div>
+				<div class="content">
+					<h3>Xponent Technologies <a href="https://www.linkedin.com/company/xponent-technology">
+							<span class="icon brands fa-linkedin zoom" style="display: inline-block"></span></a>
+						<a href="https://xponent.tech/">
+							<span class="icon solid fa-globe zoom" style="display: inline-block"></span></a>
+					</h3>
+					<div class="col-6 col-12-medium">
+						<ul>
+							<li>Developed a <b>cross-platform app</b> from scratch using <b>Expo</b> and the JavaScript
+								library <b>React
+									Native</b> for design and functionality and the <b>Native-Base</b> library for
+								components</li>
+							<li><b>Cooperated</b> with a team of programmers and UI/UX designers to work on the design
+								and
+								functionality of app pages, following their design with <b>93% accuracy</b></li>
+							<li>Utilized <b>Firebase</b> to allow for authentication of new users and returning users
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section class="spotlight">
+				<div class="image"><img src="images/kidney.png" alt="Canada COVID-19 Timeline" /></div>
+				<div class="content">
+					<h3>Kidney Health Education and Research Group <a
+							href="https://www.linkedin.com/company/kidney-health-education-and-research-group/">
+							<span class="icon brands fa-linkedin zoom" style="display: inline-block"></span></a>
+						<a href="https://nefros.net/">
+							<span class="icon solid fa-globe zoom" style="display: inline-block"></span></a>
+					</h3>
+					<div class="col-6 col-12-medium">
+						<ul>
+							<li>Helped develop back‑end scripts using the <b>Python</b> libraries <b>Pandas</b> and
+								<b>Requests</b> for organ research</li>
+							<li>Displayed <b>critical thinking</b> skills by figuring out solutions for end goals and
+								implementing these solutions in projects</li>
+							<li><b>Coordinated</b> using <b>SQL</b> databases with the team to collect patient data with
+								<b>98% accuracy</b></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</section>
+		</section>
+
+
 
 		<!-- Two -->
 		<section id="project">
@@ -120,28 +206,33 @@
 			</div>
 		</section>
 		<section class="wrapper alt style2">
-			<section class="spotlight">
+
+			<section class="spotlight2">
 				<div class="image"><img src="images/covid-timeline.png" alt="Canada COVID-19 Timeline" /></div>
 				<div class="content">
-					<h3>Canadian COVID-19 Timeline (WIP) <a href="https://github.com/piroozb/canada-covid-timeline">
+					<h3>Canadian COVID-19 Timeline <a href="https://github.com/piroozb/canada-covid-timeline">
 							<span class="icon brands fa-github zoom" style="display: inline-block"></span></a>
 						<a href="https://covidtimelinecanada.codes/">
 							<span class="icon solid fa-globe zoom" style="display: inline-block"></span></a>
 					</h3>
 					<div class="col-6 col-12-medium">
 						<ul>
-							<li>Developed a website using <b>HTML</b>, <b>CSS</b>, <b>SASS</b> and <b>Javascript</b> to
+							<li>Developed a website using <b>HTML</b>, <b>CSS</b>, <b>SASS</b> and <b>Javascript</b>
+								to
 								showcase a timeline of the COVID‑19 pandemic in Canada.</li>
 							<li>Implemented and connected a COVID‑19 API with <b>Chart.js</b> to graph and showcase
 								COVID‑19
-								cases in Canada with 95% accuracy. Utilized the <b>Google News</b> API to make the graph
-								interactive so that users can view news related to the pandemic of specific dates.</li>
+								cases in Canada with 95% accuracy. Utilized the <b>Google News</b> API to make the
+								graph
+								interactive so that users can view news related to the pandemic of specific dates.
+							</li>
 							<li>Submitted to EngHack 2021</li>
 						</ul>
 					</div>
 				</div>
 			</section>
-			<section class="spotlight">
+
+			<section class="spotlight2">
 				<div class="image"><img src="images/metalface.png" alt="Metalface" /></div>
 				<div class="content">
 					<h3>Metalface <a href="https://github.com/piroozb/metalface">
@@ -161,7 +252,7 @@
 				</div>
 			</section>
 
-			<section class="spotlight">
+			<section class="spotlight2">
 				<div class="image"><img src="images/relax.png" alt="Knight Hax-Relax" /></div>
 				<div class="content">
 					<h3>Knight Hax-Relax <a href="https://github.com/arsalan1322/Knight-Hacks">
@@ -171,9 +262,11 @@
 					</h3>
 					<div class="col-6 col-12-medium">
 						<ul>
-							<li>Developed a meditating website to help users unwind and forget about their issues for a
+							<li>Developed a meditating website to help users unwind and forget about their issues
+								for a
 								moment</li>
-							<li>Helped write the CSS and JavaScript for the website and implemented the multiple themes
+							<li>Helped write the CSS and JavaScript for the website and implemented the multiple
+								themes
 								of the website</li>
 							<li>Submitted to KnightHacks 2021</li>
 						</ul>
@@ -181,7 +274,7 @@
 				</div>
 			</section>
 
-			<section class="spotlight">
+			<section class="spotlight2">
 				<div class="image"><img src="images/connect_4.png" alt="Connect4" /></div>
 				<div class="content">
 					<h3>Discord Connect 4 Bot <a href="https://github.com/piroozb/connect-4-discord">
@@ -202,16 +295,6 @@
 			</section>
 		</section>
 
-		<style>
-			@media (max-width: 800px) {
-				.spotlight .content:nth-child(2) {
-					display: flex;
-					flex-direction: column;
-					justify-content: center;
-					align-items: center;
-				}
-			}
-		</style>
 
 		<!-- Three -->
 		<section id="resume" class="wrapper style3 special">
@@ -247,7 +330,7 @@
 			</ul>
 			<ul class="copyright">
 				<li>&copy; Pirooz Seyf Askari Barkoosaraei</li>
-				<li>2021</li>
+				<li id="year"></li>
 			</ul>
 		</footer>
 
